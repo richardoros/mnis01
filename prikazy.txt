@@ -1,0 +1,20 @@
+git clone https://github.com/richardoros/mnis01
+git branch MNIS1701
+git checkout MNIS1701
+notepad zoznam_prac.xhtml
+git status
+git add zoznam_prac.xhtml
+git commit -m "vlozenie inicialov, bakalarskej prace a pocet stran"
+git checkout master
+git merge MNIS1701
+git branch -d MNIS1701
+git branch MNIS1702
+git checkout MNIS1702
+notepad zoznam_prac.xhtml
+git add zoznam_prac.xhtml
+git commit -m "vlozenie anotacie"
+git checkout master
+git branch -d MNIS1702
+notepad prikazy.txt
+git commit -m "vlozenie prikazov"
+git push origin master
